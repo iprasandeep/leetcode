@@ -1,12 +1,6 @@
 #include<iostream>
 using namespace std;
 
-
-/*
-
-nums  = [2,3,-2, 4]
-ans  = 6
-*/
 int maxProduct(int a[], int n)
 {
 	int ans = a[0];
@@ -23,8 +17,9 @@ int maxProduct(int a[], int n)
 		mi = min(a[i], mi*a[i]);
 		ans = max(ans, ma); // max(2, ma)
 	}
-	return ans;
+	return ans
 }
+
 int main()
 {
 	int n;
